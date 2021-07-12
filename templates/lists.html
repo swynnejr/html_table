@@ -7,18 +7,18 @@
     <title>Users</title>
 </head>
 <body>
-    <h1 style="text-align: center;">Users</h1>
-    <table>
+    <h1>Users</h1>
+    <table style="border: 3px solid black;">
         <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Full Name</th>
+            <th style="border: 2px solid black; padding: .5em;">First Name</th>
+            <th style="border: 2px solid black; padding: .5em;">Last Name</th>
+            <th style="border: 2px solid black; width: 150px; padding: .5em;">Full Name</th>
         </tr>
         {% for i in users %}
         <tr>
-            <td>{{ i['first_name'] }}</td>
-            <td>{{ i['last_name'] }}</td>
-            <td>{{ i['first_name'] }}</td>
+            <td style="border: 1px solid black; padding: .5em;">{{ i['first_name'] }}</td>
+            <td style="border: 1px solid black; padding: .5em;">{{ i['last_name'] }}</td>
+            <td style="border: 1px solid black; padding: .5em;">{{ i['first_name'] }} {{ i['last_name'] }}</td>
         </tr>
         {% endfor %}
     </table>
