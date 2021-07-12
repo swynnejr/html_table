@@ -14,16 +14,13 @@
             <th>Last Name</th>
             <th>Full Name</th>
         </tr>
+        {% for i in users %}
         <tr>
-            {% for fname in first_name.values() %}
-            <td>{{ fname }}</td>
-            {% endfor %}
+            <td>{{ i['first_name'] }}</td>
+            <td>{{ i['last_name'] }}</td>
+            <td>{{ i['first_name'] }}</td>
         </tr>
-        <tr>
-            {% for lname in last_name.values() %}
-            <td>{{ lname }}</td>
-            {% endfor %}
-        </tr>
+        {% endfor %}
     </table>
 </body>
 </html>
